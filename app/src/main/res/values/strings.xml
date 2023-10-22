@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Xoliu Music</string>
+    <string name="guid_text_one_title">个 性 推 荐</string>
+
+    <string name="guid_text_one_info">每 天 为 你 良 心 推 荐 最 合 口 味 的 好 音 乐</string>
+
+    <string name="guid_text_two_title">精 彩 评 论</string>
+
+    <string name="guid_text_two_info">9 亿 多 条 有 趣 的 故 事，听 歌 再 不 孤 单</string>
+
+    <string name="guid_text_three_title">精 选 视 频</string>
+
+    <string name="guid_text_three_info">音乐热点，娱乐资讯尽收眼底</string>
 </resources>

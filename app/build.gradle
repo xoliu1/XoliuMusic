@@ -1,7 +1,20 @@
+
+buildscript {
+    repositories {
+        maven {
+            url 'https://maven.aliyun.com/repository/jcenter'
+        }
+    }
+}
+
+
+
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
 }
+
 
 android {
     namespace 'com.xoliu.xoliumusic'
@@ -35,6 +48,8 @@ android {
             viewBinding = true
         }
     }
+
+
 }
 
 dependencies {
