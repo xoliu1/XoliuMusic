@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.Splash.SplashActivity"
+    android:background="@drawable/jianbian"
     >
 
     <ImageView
@@ -47,7 +48,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-
+                android:id="@+id/et_username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="账号/用户名/手机号"
@@ -69,7 +70,7 @@
             app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/tv_password"
+                android:id="@+id/et_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="密码"
@@ -88,7 +89,7 @@
             android:layout_marginTop="40dp"
             android:gravity="center"
             android:textSize="12sp"
-            android:text="我已阅读并同意《服务条款》、《隐私政策》" />
+            android:text="@string/xieyi" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_login"
@@ -97,25 +98,26 @@
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:backgroundTint="#DC143C"
-            android:text="立即体验"
+            android:text="@string/materialButtonText"
             android:textSize="15sp"
-            app:cornerRadius="10mm"
+            app:cornerRadius="10dp"
             app:rippleColor="#171616" />
 
 
     </LinearLayout>
 
     <TextView
+        android:id="@+id/regisURL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="没有账号? 去注册>"
         android:textColor="#00BFFF"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/tv_forget"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_forget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"

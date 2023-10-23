@@ -87,7 +87,7 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="36dp"
+                android:layout_height="39dp"
                 android:layout_marginRight="20dp"
                 android:background="@drawable/shape_gradient_login"
                 android:gravity="center"
@@ -95,18 +95,9 @@
                 android:text="登录/注册"
                 android:onClick="onLogin"
                 android:textColor="@color/colorWhite"
-                android:textSize="13sp" />
+                android:textSize="14sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
-                android:background="@drawable/shape_color_next"
-                android:gravity="center"
-                android:minEms="7"
-                android:onClick="onMain"
-                android:text="立即体验"
-                android:textColor="@color/colorMain"
-                android:textSize="13sp" />
+
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

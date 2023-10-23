@@ -3,27 +3,30 @@ package com.xoliu.xoliumusic.ui.Splash;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AccelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.xoliu.xoliumusic.R;
-import com.xoliu.xoliumusic.ui.LoginActivity;
-import com.xoliu.xoliumusic.ui.Splash.FixedSpeedScroller;
-import com.xoliu.xoliumusic.ui.Splash.MyInterceptViewPager;
 import com.xoliu.xoliumusic.ui.Splash.adapter.MyFragmentPagerAdapter;
 import com.xoliu.xoliumusic.ui.Splash.adapter.TextPagerAdapter;
 
 import java.lang.reflect.Field;
+/**
+ * 启动引导界面
+ * @author xoliu
+ * @create 23-10-23
+ **/
 
 public class SplashActivity extends AppCompatActivity {
     public static boolean SHOW_TWO_ANIM = true;//第二个界面是否展示动画 网易云音乐 3->2时 2没展示动画效果
@@ -37,6 +40,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        setFullScreenImmersion();
         mTextPager = findViewById(R.id.main_text_pager);
         mImageViewPager = findViewById(R.id.main_image_pager);
         mTouchLayout = findViewById(R.id.main_touch_layout);
@@ -138,9 +142,24 @@ public class SplashActivity extends AppCompatActivity {
 
        // Toast.makeText(this, "登录/注册", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, LoginActivity.class));
+        finish();
     }
 
-    public void onMain(View view) {
-        Toast.makeText(this, "立即体验", Toast.LENGTH_SHORT).show();
+    /**
+     * 全屏沉浸式
+     */
+    /**
+     * 全屏沉浸式
+     */
+    protected void setFullScreenImmersion() {
+        Window window = getWindow();
+        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+        int option = window.getDecorView().getSystemUiVisibility() | View.SYSTEM_UI_FLAG_LAYOUT_STABLE |
+                View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+        window.getDecorView().setSystemUiVisibility(option);
+        window.setStatusBarColor(Color.TRANSPARENT);
+        window.setNavigationBarColor(Color.TRANSPARENT);
     }
+
 }

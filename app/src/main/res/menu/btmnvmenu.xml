@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_item1"
+        android:icon="@drawable/ic_wangyiyun"
+        android:title="音乐1"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/navigation_item2"
+        android:icon="@drawable/ic_wangyiyun"
+        android:title="音乐2"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/navigation_item3"
+        android:icon="@drawable/ic_wangyiyun"
+        android:title="音乐3"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navigation_item4"
+        android:icon="@drawable/ic_wangyiyun"
+        android:title="音乐4"
+        app:showAsAction="always"/>
+</menu>
