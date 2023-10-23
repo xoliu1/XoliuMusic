@@ -1,18 +1,21 @@
 package com.xoliu.xoliumusic.ui.Main
 
+import com.xoliu.xoliumusic.R
 import android.os.Build
 import android.os.Bundle
 import android.text.InputType
 import android.view.Menu
-import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.MenuItemCompat
+import androidx.navigation.Navigation.findNavController
+import androidx.navigation.findNavController
+import androidx.navigation.ui.NavigationUI.setupWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.xoliu.xoliumusic.Base.BaseActivity
-import com.xoliu.xoliumusic.R
 import com.xoliu.xoliumusic.databinding.ActivityMainBinding
 import com.xoliu.xoliumusic.ui.tools.shiqv
 
@@ -21,9 +24,14 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         //初始化toolbar
         initToolbar(binding.toolbar)
+
+//        val navView = findViewById<BottomNavigationView>(com.xoliu.xoliumusic.R.id.btmnv)
+//
+//        val navController = findNavController(this, com.xoliu.xoliumusic.R.id.nav_host_fragment_activity_main)
+//        setupWithNavController(binding.btmnv, navController)
+
 
     }
 
@@ -68,7 +76,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
         //提示词
         searchView.revealOnFocusHint = true
-        searchView.queryHint = "致郁系，疼痛而又欢愉的灵魂"
+        searchView.queryHint = "薛之谦"
 
         //设置输入字符
         searchView.inputType = InputType.TYPE_CLASS_NUMBER
@@ -83,13 +91,12 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             when (menuItem.itemId) {
                 com.xoliu.xoliumusic.R.id.shiqv -> jumpActivity(shiqv::class.java)
             }
-            
+
             true
         }
     }
-
     fun initBtmNv(){
-        binding.btmnv
+        //binding.btmnv
     }
 
 }

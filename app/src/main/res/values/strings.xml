@@ -14,4 +14,12 @@
     <string name="guid_text_three_info">音乐热点，娱乐资讯尽收眼底</string>
     <string name="materialButtonText">立即体验</string>
     <string name="xieyi">我已阅读并同意《服务条款》、《隐私政策》</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="scan">扫码</string>
+    <string name="btnv_item1">发现</string>
+    <string name="btnv_item2">我的</string>
+    <string name="btnv_item3">关注</string>
+    <string name="btnv_item4">社区</string>
+    <string name="btnv_item5">播客</string>
 </resources>

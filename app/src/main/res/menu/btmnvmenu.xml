@@ -3,22 +3,27 @@
     <item
         android:id="@+id/navigation_item1"
         android:icon="@drawable/ic_wangyiyun"
-        android:title="音乐1"
+        android:title="@string/btnv_item1"
         app:showAsAction="always"
         />
     <item
         android:id="@+id/navigation_item2"
-        android:icon="@drawable/ic_wangyiyun"
-        android:title="音乐2"
+        android:icon="@drawable/yinfu"
+        android:title="@string/btnv_item2"
         app:showAsAction="always" />
     <item
         android:id="@+id/navigation_item3"
-        android:icon="@drawable/ic_wangyiyun"
-        android:title="音乐3"
+        android:icon="@drawable/guanzhu"
+        android:title="@string/btnv_item3"
         app:showAsAction="always"/>
     <item
         android:id="@+id/navigation_item4"
-        android:icon="@drawable/ic_wangyiyun"
-        android:title="音乐4"
+        android:icon="@drawable/sheqv"
+        android:title="@string/btnv_item4"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/navigation_item5"
+        android:icon="@drawable/boke"
+        android:title="@string/btnv_item5"
         app:showAsAction="always"/>
 </menu>

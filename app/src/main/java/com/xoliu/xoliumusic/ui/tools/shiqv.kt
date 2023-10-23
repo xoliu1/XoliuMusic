@@ -16,10 +16,7 @@ class shiqv : BaseActivity<ActivityShiqvBinding>() {
     }
     fun initToolBar(){
         binding.shiqvToolbar.setNavigationOnClickListener {
-            it.setOnClickListener(View.OnClickListener {
                 finish()
-            }
-            )
         }
     }
 }

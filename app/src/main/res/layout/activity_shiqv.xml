@@ -14,7 +14,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:navigationIcon="@drawable/back"
+        app:navigationIcon="@drawable/backend"
         tools:layout_editor_absoluteX="0dp" />
 
     <ImageView
