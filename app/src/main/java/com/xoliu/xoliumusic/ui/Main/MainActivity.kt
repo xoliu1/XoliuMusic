@@ -12,6 +12,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.MenuItemCompat
 import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -27,10 +28,9 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         //初始化toolbar
         initToolbar(binding.toolbar)
 
-//        val navView = findViewById<BottomNavigationView>(com.xoliu.xoliumusic.R.id.btmnv)
-//
-//        val navController = findNavController(this, com.xoliu.xoliumusic.R.id.nav_host_fragment_activity_main)
-//        setupWithNavController(binding.btmnv, navController)
+        //初始化导航栏
+        initBTMNV()
+
 
 
     }
@@ -57,6 +57,15 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
 
         return true
+    }
+
+    fun initBTMNV(){
+        val navView = findViewById<BottomNavigationView>(com.xoliu.xoliumusic.R.id.btmnv)
+
+//        val navController = findNavController(this, com.xoliu.xoliumusic.R.id.nav_host_fragment)
+//        setupWithNavController(binding.btmnv, navController)
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+        binding.btmnv.setupWithNavController(navHostFragment.navController)
     }
 
     @RequiresApi(Build.VERSION_CODES.N_MR1)
@@ -94,9 +103,6 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
             true
         }
-    }
-    fun initBtmNv(){
-        //binding.btmnv
     }
 
 }

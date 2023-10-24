@@ -2,7 +2,8 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation.xml">
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/navigation_item1">
     <fragment
         android:id="@+id/navigation_item1"
         android:name="com.xoliu.xoliumusic.ui.Main.Fragment.ExploreFragment"
@@ -10,22 +11,22 @@
         tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/navigation_item2"
-        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.ExploreFragment"
+        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.MineFragment"
         android:label="label"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/fragment_mine" />
     <fragment
         android:id="@+id/navigation_item3"
-        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.ExploreFragment"
+        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.guanzhuFragment"
         android:label="label"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/fragment_guanzhu" />
     <fragment
         android:id="@+id/navigation_item4"
-        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.ExploreFragment"
+        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.sheqvFragment"
         android:label="label"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/fragment_sheqv" />
     <fragment
         android:id="@+id/navigation_item5"
-        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.ExploreFragment"
+        android:name="com.xoliu.xoliumusic.ui.Main.Fragment.bokeFragment"
         android:label="label"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/fragment_boke" />
 </navigation>

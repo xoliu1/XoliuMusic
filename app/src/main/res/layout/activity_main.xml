@@ -27,11 +27,12 @@
         app:navigationIcon="@drawable/gramophone_record"
         tools:layout_editor_absoluteX="0dp">
 
-        <ImageView
+<!--        <ImageView
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:alpha="0.4"
-            android:src="@drawable/esdmuqwu" />
+            android:src="@drawable/esdmuqwu" />-->
+
 
 
     </androidx.appcompat.widget.Toolbar>
@@ -69,6 +70,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:navGraph="@navigation/mobile_navigation" />-->
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="50dp"
+        app:defaultNavHost="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
