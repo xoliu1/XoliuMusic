@@ -1,23 +1,22 @@
 package com.xoliu.xoliumusic.ui.Main.Fragment
 
+import com.xoliu.xoliumusic.R
+import android.R.attr.x
+import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.bumptech.glide.request.RequestOptions
+import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.xoliu.xoliumusic.Base.BaseFragment
 import com.xoliu.xoliumusic.DataBean.db_banner
-import com.xoliu.xoliumusic.R
 import com.xoliu.xoliumusic.databinding.FragmentExploreBinding
 import com.youth.banner.Banner
+import com.youth.banner.BuildConfig
 import com.youth.banner.adapter.BannerImageAdapter
-import com.youth.banner.config.BannerConfig
-import com.youth.banner.holder.BannerImageHolder
-import javax.xml.transform.Transformer
+import com.youth.banner.indicator.CircleIndicator
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -31,14 +30,14 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
-   lateinit var banner_data: BannerImageAdapter<Int>
     private val TAG = "xoliu1"
 
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //initBanner();
+        initBanner();
+
 
     }
 
@@ -58,18 +57,8 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
     }
 
     fun initBanner(){
-        Log.e(TAG, "initBanner: 1")
 
-        Log.e(TAG, "initBanner: 2")
-        binding.banner.setAdapter(object : BannerImageAdapter<db_banner>(db_banner.testData3) {
-            override fun onBindView(holder: BannerImageHolder, data: db_banner, position: Int, size: Int) {
-                Log.e(TAG, "onBindView: 3")
-                //图片加载自己实现
-                Glide.with(holder.itemView)
-                    .load(data.imageUrl)
-                    .apply(RequestOptions.bitmapTransform(RoundedCorners(30)))
-                    .into(holder.imageView) }
-        })
+
 
 
 

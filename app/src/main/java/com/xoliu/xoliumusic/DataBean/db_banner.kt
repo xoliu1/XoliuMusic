@@ -1,18 +1,22 @@
 package com.xoliu.xoliumusic.DataBean
 
+import com.xoliu.xoliumusic.R
+
 class db_banner {
-    var imageRes: Int? = null
+    public var imageRes: Int = R.drawable.dj
     var imageUrl: String? = null
     var title: String?
     var viewType: Int
 
     constructor(imageRes: Int?, title: String?, viewType: Int) {
-        this.imageRes = imageRes
+        if (imageRes != null) {
+            this.imageRes = imageRes
+        }
         this.title = title
         this.viewType = viewType
     }
 
-    constructor(imageUrl: String?, title: String?, viewType: Int) {
+    constructor(imageUrl: String?, title: String?, viewType: Int,imageRes: Int?) {
         this.imageUrl = imageUrl
         this.title = title
         this.viewType = viewType
@@ -26,35 +30,35 @@ class db_banner {
                 val list: MutableList<db_banner> = ArrayList()
                 list.add(
                     db_banner(
-                        "https://s2.loli.net/2023/10/22/dwUbAEQHeVpRN3y.png",
+                        R.drawable.dj,
                         null,
                         1
                     )
                 )
                 list.add(
                     db_banner(
-                        "https://s2.loli.net/2023/10/22/dwUbAEQHeVpRN3y.png",
+                        R.drawable.dj,
                         null,
                         1
                     )
                 )
                 list.add(
                     db_banner(
-                        "https://s2.loli.net/2023/10/22/dwUbAEQHeVpRN3y.png",
+                        R.drawable.dj,
                         null,
                         1
                     )
                 )
                 list.add(
                     db_banner(
-                        "https://s2.loli.net/2023/10/22/dwUbAEQHeVpRN3y.png",
+                        R.drawable.dj,
                         null,
                         1
                     )
                 )
                 list.add(
                     db_banner(
-                        "https://s2.loli.net/2023/10/22/dwUbAEQHeVpRN3y.png",
+                        R.drawable.dj,
                         null,
                         1
                     )

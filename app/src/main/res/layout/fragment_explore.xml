@@ -9,7 +9,7 @@
     <!-- TODO: Update blank fragment layout -->
 
 
-        <com.youth.banner.Banner
+        <com.stx.xhb.androidx.XBanner
             android:id="@+id/banner"
             android:layout_width="match_parent"
             android:layout_height="90dp"
