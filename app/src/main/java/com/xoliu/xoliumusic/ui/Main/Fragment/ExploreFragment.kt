@@ -6,9 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.bumptech.glide.request.RequestOptions
 import com.xoliu.xoliumusic.Base.BaseFragment
+import com.xoliu.xoliumusic.DataBean.DataBean
 import com.xoliu.xoliumusic.R
 import com.xoliu.xoliumusic.databinding.FragmentExploreBinding
+import com.youth.banner.Banner
+import com.youth.banner.adapter.BannerImageAdapter
+import com.youth.banner.holder.BannerImageHolder
+import com.youth.banner.indicator.CircleIndicator
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -38,6 +46,11 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
     ): View? {
         // Inflate the layout for this fragment
        return inflater.inflate(R.layout.fragment_explore, container, false)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        initBanner()
     }
     companion object {
         @JvmStatic
@@ -95,7 +108,18 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
 
 
 
+fun initBanner(){
+    var banner: Banner<DataBean, BannerImageAdapter<DataBean>> = requireView().findViewById(R.id.banner)
 
+    banner.setAdapter(object : BannerImageAdapter<DataBean>(DataBean.testData3) {
+        override fun onBindView(holder: BannerImageHolder, data: DataBean, position: Int, size: Int) {
+            //图片加载自己实现
+            Glide.with(holder.itemView)
+                .load(data.imageUrl)
+                .apply(RequestOptions.bitmapTransform(RoundedCorners(30)))
+                .into(holder.imageView) }
+    }).addBannerLifecycleObserver(this).setIndicator(CircleIndicator(context))
+}
 
 
 }
