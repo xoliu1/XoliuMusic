@@ -6,7 +6,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.Main.MainActivity"
-    android:layout_gravity="left"
     android:id="@+id/drawerLayout"
     >
 
@@ -14,34 +13,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="@drawable/jianbian0"
+        android:background="@drawable/jianbian"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:menu="@menu/menu_search"
-        app:navigationIcon="@drawable/gramophone_record"
-        tools:layout_editor_absoluteX="0dp">
+        app:navigationIcon="@drawable/djtemp"
+        tools:layout_editor_absoluteX="16dp">
 
-<!--        <ImageView
+        <!--<ImageView
             android:layout_width="170dp"
             android:layout_height="50dp"
             android:alpha="0.4"
-            android:src="@drawable/esdmuqwu" />-->
-
+            android:src="@drawable/esdmuqwu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
 
 
     </androidx.appcompat.widget.Toolbar>
+
+
+
+<!--    <ImageView
+        android:id="@+id/imgtemp"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:alpha="0.4"
+        android:src="@drawable/esdmuqwu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/nav_host_fragment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />-->
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btmnv"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@drawable/jianbian"
+        android:background="@drawable/jianbian0"
         app:itemRippleColor="@color/colorDeep"
         app:itemIconTint="@drawable/btmnv_select"
         app:itemTextColor="@drawable/btmnv_select"
@@ -76,14 +90,14 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="56dp"
         android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp"
         app:defaultNavHost="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation"/>
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:navGraph="@navigation/mobile_navigation" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -96,10 +110,7 @@
         android:layout_gravity="left"
         android:background="@color/colorGray"
         >
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
+
 
 
 

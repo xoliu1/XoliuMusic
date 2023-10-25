@@ -1,22 +1,14 @@
 package com.xoliu.xoliumusic.ui.Main.Fragment
 
-import com.xoliu.xoliumusic.R
-import android.R.attr.x
-import android.graphics.drawable.Drawable
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.bumptech.glide.load.resource.bitmap.CircleCrop
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.xoliu.xoliumusic.Base.BaseFragment
-import com.xoliu.xoliumusic.DataBean.db_banner
+import com.xoliu.xoliumusic.R
 import com.xoliu.xoliumusic.databinding.FragmentExploreBinding
-import com.youth.banner.Banner
-import com.youth.banner.BuildConfig
-import com.youth.banner.adapter.BannerImageAdapter
-import com.youth.banner.indicator.CircleIndicator
 
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,7 +28,6 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        initBanner();
 
 
     }
@@ -46,7 +37,7 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_explore, container, false)
+       return inflater.inflate(R.layout.fragment_explore, container, false)
     }
     companion object {
         @JvmStatic
@@ -56,13 +47,55 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
             }
     }
 
-    fun initBanner(){
+    var num1 = 0;
+    var num2 = 0;
+    var num3 = 0;
+    var num4 = 0;
+//    fun initdianji(){
+//
+//        binding.btnDianzan1.setOnClickListener {
+//            if (num1 % 2 == 0) {
+//
+//            }else{
+//                it.setBackgroundResource(R.drawable.dianzan)
+//            }
+//            ++num1;
+//            true
+//        }
+//        binding.btnDianzan2.setOnClickListener {
+//            if (num2 % 2 == 0) {
+//                it.setBackgroundResource(R.drawable.dianzan1)
+//            }else{
+//                it.setBackgroundResource(R.drawable.dianzan)
+//            }
+//            ++num2;
+//            true
+//        }
+//        binding.btnDianzan1.setOnClickListener {
+//            if (num3 % 2 == 0) {
+//                it.setBackgroundResource(R.drawable.dianzan1)
+//            }else{
+//                it.setBackgroundResource(R.drawable.dianzan)
+//            }
+//            ++num3;
+//            true
+//        }
+//        binding.btnDianzan1.setOnClickListener {
+//            if (num4 % 2 == 0) {
+//                it.setBackgroundResource(R.drawable.dianzan1)
+//            }else{
+//                it.setBackgroundResource(R.drawable.dianzan)
+//            }
+//            ++num4;
+//            true
+//        }
+//    }
 
 
 
 
 
-    }
+
 
 
 }

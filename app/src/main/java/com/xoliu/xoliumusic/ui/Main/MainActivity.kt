@@ -1,6 +1,5 @@
 package com.xoliu.xoliumusic.ui.Main
 
-import com.xoliu.xoliumusic.R
 import android.os.Build
 import android.os.Bundle
 import android.text.InputType
@@ -10,13 +9,11 @@ import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.MenuItemCompat
-import androidx.navigation.Navigation.findNavController
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
-import androidx.navigation.ui.NavigationUI.setupWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.xoliu.xoliumusic.Base.BaseActivity
+import com.xoliu.xoliumusic.R
 import com.xoliu.xoliumusic.databinding.ActivityMainBinding
 import com.xoliu.xoliumusic.ui.tools.shiqv
 
@@ -56,6 +53,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
 
 
+
         return true
     }
 
@@ -66,6 +64,8 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 //        setupWithNavController(binding.btmnv, navController)
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         binding.btmnv.setupWithNavController(navHostFragment.navController)
+//        val navController = findNavController(R.id.nav_host_fragment)
+//        binding.btmnv.setupWithNavController(navController)
     }
 
     @RequiresApi(Build.VERSION_CODES.N_MR1)

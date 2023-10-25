@@ -15,7 +15,7 @@
 
     <item
         android:id="@+id/shiqv"
-        android:icon="@drawable/dj"
+        android:icon="@drawable/dj2"
         app:showAsAction="always"
         android:title="@string/shiqv"
         />
