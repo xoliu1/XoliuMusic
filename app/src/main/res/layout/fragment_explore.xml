@@ -55,9 +55,13 @@
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginTop="-20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardElevation="30dp"
+
         android:background="@drawable/jianbian1"
         android:elevation="50dp"
-        app:cardBackgroundColor="#EEA6B7"
+        app:cardBackgroundColor="@color/sienna"
         app:cardCornerRadius="20dp"
         app:contentPadding="10dp"
 
@@ -220,6 +224,7 @@
                 android:layout_width="300dp"
                 android:layout_height="160dp"
                 app:cardCornerRadius="23dp"
+                app:cardElevation="20dp"
                 android:layout_marginLeft="7dp"
                 app:cardBackgroundColor="@color/dimgray">
 
@@ -253,6 +258,7 @@
                 android:layout_height="160dp"
                 app:cardCornerRadius="23dp"
                 android:layout_marginLeft="7dp"
+                app:cardElevation="20dp"
                 app:cardBackgroundColor="@color/darksalmon">
 
                 <TextView
@@ -286,6 +292,7 @@
                 android:layout_height="160dp"
                 app:cardCornerRadius="23dp"
                 android:layout_marginLeft="7dp"
+                app:cardElevation="20dp"
                 app:cardBackgroundColor="@color/goldenrod">
 
                 <TextView
@@ -316,6 +323,7 @@
                 android:layout_height="160dp"
                 app:cardCornerRadius="23dp"
                 android:layout_marginLeft="7dp"
+                app:cardElevation="20dp"
                 app:cardBackgroundColor="@color/lightpink">
 
                 <TextView
@@ -454,6 +462,7 @@
             android:layout_width="300dp"
             android:layout_height="100dp"
             app:cardCornerRadius="8dp"
+            app:cardElevation="20dp"
             app:cardBackgroundColor="@color/darkseagreen"
             android:padding="10dp"
             android:layout_marginRight="15dp"
@@ -494,6 +503,7 @@
         </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                app:cardElevation="20dp"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
                 app:cardCornerRadius="8dp"
@@ -536,6 +546,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                app:cardElevation="20dp"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
                 app:cardCornerRadius="8dp"
@@ -577,6 +588,7 @@
 
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                app:cardElevation="20dp"
                 android:layout_width="300dp"
                 android:layout_height="100dp"
                 app:cardCornerRadius="8dp"
