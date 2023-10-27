@@ -18,16 +18,17 @@
 - [x] 基本限制布局的构造
 - [x] jetpack库的测试与实践
 - [ ] 研究开源自定义控件并应用
-- [ ] 
+- [ ] 音乐的基本播放功能
 
 ### 界面层
 
 - [x] app启动引导界面的ViewPager以及动画效果
 - [x] TextInputLayout的登录界面 (hint 字符串会自动移到 EditText 的左上角)
-- [x] 主界面的SearchView
+- [x] 探索界面的SearchView
 - [ ] 个人界面PhotoView，支持缩放，响应手势，用于头像
-- [x] BottomNavigationView实现底部导航栏
+- [x] BottomNavigationView + navigation实现底部导航栏
 - [x] Xbanner实现首页导航图的图片海报轮播
+- [ ] Tablayout的使用
 
 
 
