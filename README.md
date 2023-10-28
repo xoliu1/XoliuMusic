@@ -29,6 +29,7 @@
 - [x] BottomNavigationView + navigation实现底部导航栏
 - [x] Xbanner实现首页导航图的图片海报轮播
 - [ ] Tablayout的使用
+- [ ] 音乐播放详情界面
 
 
 
