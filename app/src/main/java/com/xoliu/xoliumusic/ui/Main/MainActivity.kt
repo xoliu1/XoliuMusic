@@ -6,11 +6,7 @@ import android.os.Bundle
 import android.text.InputType
 import android.util.Log
 import android.view.Menu
-import android.view.View
 import android.view.inputmethod.EditorInfo
-import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
-import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
@@ -19,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.xoliu.xoliumusic.Base.BaseActivity
 import com.xoliu.xoliumusic.R
 import com.xoliu.xoliumusic.databinding.ActivityMainBinding
-import com.xoliu.xoliumusic.ui.tools.shiqv
+import com.xoliu.xoliumusic.ui.Unfinished.shiqv
 
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
