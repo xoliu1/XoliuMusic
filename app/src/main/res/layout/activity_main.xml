@@ -24,17 +24,39 @@
         app:menu="@menu/menu_search"
         app:navigationIcon="@drawable/djtemp"
         tools:layout_editor_absoluteX="16dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:cardCornerRadius="30dp"
+            android:alpha="0.7"
+            >
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView1"
+                android:layout_gravity="left|center"
 
-        <androidx.appcompat.widget.SearchView
-            android:id="@+id/searchView"
-            android:layout_gravity="right"
-            app:queryHint="薛之谦"
-            android:imeOptions="actionSearch"
-            app:searchIcon="@drawable/ic_search"
-            android:layout_width="wrap_content"
-            android:inputType="text|textCapWords"
-            android:layout_height="40dp"
-            />
+                android:layout_marginLeft="-5dp"
+                app:queryHint="薛之谦"
+                android:imeOptions="actionSearch"
+                app:searchIcon="@drawable/search"
+                android:layout_width="240dp"
+                android:inputType="text|textCapWords"
+                android:layout_height="30dp"
+                />
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/scanma"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="15dp"/>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
 
         <!--<ImageView
             android:layout_width="170dp"

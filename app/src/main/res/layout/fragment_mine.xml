@@ -15,13 +15,27 @@
         android:layout_height="match_parent"
         android:layout_marginTop="30dp">
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/framlayout1"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginBottom="20dp"
+            android:padding="2dp">
+
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="140dp"
-            android:layout_height="22dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
             android:autoSizeTextType="uniform"
-            android:background="@color/colorTextWhite"
+            android:background="@color/colorWhite"
             android:ellipsize="marquee"
             android:focusable="true"
             android:focusableInTouchMode="true"
@@ -29,19 +43,17 @@
             android:scrollHorizontally="true"
             android:singleLine="true"
             android:text="在听：Lost my pieces(M-45)"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+             />
+        </androidx.cardview.widget.CardView>
 
         <FrameLayout
             android:id="@+id/framlayout1"
             android:layout_width="match_parent"
             android:layout_height="190dp"
-            app:layout_constraintBottom_toTopOf="@id/cardView"
-            app:layout_constraintTop_toBottomOf="@id/textView2"
+            app:layout_constraintBottom_toTopOf="@id/cardView5"
+            app:layout_constraintTop_toBottomOf="@id/cardView9"
             app:layout_constraintVertical_bias="0.0"
-            tools:layout_editor_absoluteX="-16dp">
+            tools:layout_editor_absoluteX="16dp">
 
             <ImageView
                 android:layout_width="80dp"
@@ -104,6 +116,7 @@
 
 
         </FrameLayout>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView5"
             android:layout_width="match_parent"

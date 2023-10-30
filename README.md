@@ -61,8 +61,10 @@
 
 ### '我的'页
 
-- [ ] CardView嵌套RecyclerView
-- [ ] PopupWindow的demo（歌单的更多选项）
+- [x] CardView嵌套RecyclerView
+- [x] Tablayout的使用
+- [x] tabItem事件绑定：scrollview滑动到对应指定内容
+- [x] 状态的文字跑马灯效果
 
 ### '关注'页
 
@@ -71,12 +73,12 @@
 
 ### '社区'页
 
-- [ ] Tablayout的使用
+- [x] Tablayout的使用
 - [ ] 只写广场页面
 
 ### '播客'页
 
-- [ ] Tablayout的使用
+- [ ] PopupWindow的demo
 - [ ] 
 
 
