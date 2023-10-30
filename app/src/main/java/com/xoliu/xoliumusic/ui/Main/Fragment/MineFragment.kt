@@ -34,7 +34,7 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
 
     var geDanList1 = ArrayList<gedan>()
     var geDanList2 = ArrayList<gedan>()
-    var geDanList3 = ArrayList<gedan>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

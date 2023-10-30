@@ -6,28 +6,38 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="15dp"
+            app:cardCornerRadius="100dp">
         <ImageView
             android:id="@+id/touXiang"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="15dp"/>
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+
+            android:adjustViewBounds="true"/>
+        </androidx.cardview.widget.CardView>
         <TextView
             android:id="@+id/UserName"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
             android:text="awiuhduiwahd"
-            android:textSize="22sp"
+            android:textSize="17sp"
+            android:gravity="center"
             android:layout_gravity="center"/>
         <TextView
             android:id="@+id/userAction"
             android:layout_width="wrap_content"
             android:layout_height="27dp"
             android:layout_gravity="center"
-            android:textSize="20sp"
+            android:gravity="center"
+            android:textSize="15sp"
             android:layout_marginLeft="10dp"
             android:text="qweqw"
             android:textColor="@color/gray"
@@ -37,7 +47,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="80dp"
+        android:paddingStart="40dp"
         android:paddingRight="20dp"
         android:paddingTop="20dp"
         android:orientation="vertical">
@@ -46,12 +56,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="qwewqasdddddddddddddddddddddddasdddddddddewq"
-            android:textSize="21sp"/>
+            android:textSize="17sp"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="55dp"
             app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/gray_cc">
+            app:cardBackgroundColor="@color/gray_cc"
+            android:layout_marginTop="20dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,18 +79,18 @@
                 android:id="@+id/songName"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginTop="4dp"
                 android:text="Lost in"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:id="@+id/songSinger"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="33dp"
-                android:textSize="15sp"
+                android:layout_marginTop="27dp"
+                android:textSize="14sp"
                 android:text="ALI/"/>
 
 
@@ -88,13 +99,13 @@
         <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="20dp"
             android:orientation="horizontal"
             android:layout_gravity="bottom"
             android:gravity="center">
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:src="@drawable/share"
                 android:adjustViewBounds="true"/>
             <TextView
@@ -102,10 +113,10 @@
                 android:layout_height="40dp"
                 android:text=" 分享"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="14sp"/>
             <ImageView
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="20dp"
                 android:src="@drawable/pingklun"
                 android:adjustViewBounds="true"
                 android:layout_marginLeft="40dp"/>
@@ -115,20 +126,20 @@
                 android:layout_height="40dp"
                 android:text="123"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="14sp"/>
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:src="@drawable/dianzan3"
                 android:adjustViewBounds="true"
                 android:layout_marginLeft="40dp"/>
             <TextView
                 android:id="@+id/dianzanNum"
                 android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_height="20dp"
                 android:text="123"
                 android:gravity="center"
-                android:textSize="20sp"/>
+                android:textSize="14sp"/>
 
 
 

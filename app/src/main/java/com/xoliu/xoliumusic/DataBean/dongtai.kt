@@ -11,8 +11,8 @@ class dongtai {
     var songName:String
     var songSinger:String
     var random = Random()
-    var pinglunNum:Int = random.nextInt(901) + 107
-    var dianzanNum:Int = random.nextInt(9003) + 1006
+    var pinglunNum:String = (random.nextInt(901) + 107).toString()
+    var dianzanNum:String = (random.nextInt(9003) + 1006).toString()
 
     constructor(
         userImg: Int,
