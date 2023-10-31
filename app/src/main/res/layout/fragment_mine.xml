@@ -42,7 +42,7 @@
             android:marqueeRepeatLimit="marquee_forever"
             android:scrollHorizontally="true"
             android:singleLine="true"
-            android:text="在听：Lost my pieces(M-45)"
+            android:text="在听： Sea Of Problems - Glichery"
              />
         </androidx.cardview.widget.CardView>
 

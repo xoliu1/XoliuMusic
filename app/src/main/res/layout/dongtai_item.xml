@@ -6,8 +6,13 @@
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#D5D2D2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -16,8 +21,8 @@
             app:cardCornerRadius="100dp">
         <ImageView
             android:id="@+id/touXiang"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
 
             android:adjustViewBounds="true"/>
         </androidx.cardview.widget.CardView>
@@ -49,19 +54,20 @@
         android:layout_height="wrap_content"
         android:paddingStart="40dp"
         android:paddingRight="20dp"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
         android:orientation="vertical">
         <TextView
+            android:textColor="@color/black"
             android:id="@+id/contentString"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="qwewqasdddddddddddddddddddddddasdddddddddewq"
-            android:textSize="17sp"/>
+            android:textSize="15sp"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="55dp"
             app:cardCornerRadius="10dp"
-            app:cardBackgroundColor="@color/gray_cc"
+            app:cardBackgroundColor="#E4E3E3"
             android:layout_marginTop="20dp">
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
@@ -79,18 +85,18 @@
                 android:id="@+id/songName"
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="60dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:text="Lost in"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"/>
+                android:textSize="15sp"/>
             <TextView
                 android:id="@+id/songSinger"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="27dp"
-                android:textSize="14sp"
+                android:textSize="13sp"
                 android:text="ALI/"/>
 
 
@@ -102,6 +108,7 @@
             android:layout_height="20dp"
             android:orientation="horizontal"
             android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"
             android:gravity="center">
             <ImageView
                 android:layout_width="20dp"
@@ -119,7 +126,7 @@
                 android:layout_height="20dp"
                 android:src="@drawable/pingklun"
                 android:adjustViewBounds="true"
-                android:layout_marginLeft="40dp"/>
+                android:layout_marginLeft="70dp"/>
             <TextView
                 android:id="@+id/pinglunNum"
                 android:layout_width="wrap_content"
@@ -132,7 +139,7 @@
                 android:layout_height="20dp"
                 android:src="@drawable/dianzan3"
                 android:adjustViewBounds="true"
-                android:layout_marginLeft="40dp"/>
+                android:layout_marginLeft="70dp"/>
             <TextView
                 android:id="@+id/dianzanNum"
                 android:layout_width="wrap_content"
@@ -155,6 +162,7 @@
 
 
     </LinearLayout>
+
 
 
 

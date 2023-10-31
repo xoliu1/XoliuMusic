@@ -3,7 +3,7 @@
     <item android:gravity="center" android:top="0.5dp" android:bottom="0.5dp">
         <shape>
             <!-- 上下边距合计1dp 高度减少1dp -->
-            <size android:height="41dp" />
+            <size android:height="45dp" />
             <corners android:radius="999dp" />
             <solid android:color="@color/colorWhite" />
         </shape>
