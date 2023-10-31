@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:scrollbars="none"
     tools:context=".ui.Main.Fragment.ExploreFragment">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_marginTop="-40dp"
@@ -74,9 +75,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/colorWhite"
             android:text="HI，音乐合伙人"
-            android:textSize="20sp" />
+            android:textSize="19sp" />
 
         <ImageView
             android:layout_width="53dp"

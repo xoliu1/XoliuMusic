@@ -26,6 +26,35 @@ class DataBean {
                 val list: MutableList<DataBean> = ArrayList()
                 list.add(
                     DataBean(
+                        "https://s2.loli.net/2023/10/31/PqjC6iXanAhSkgw.png",
+                        null,
+                        1
+                    )
+                )
+                list.add(
+                    DataBean(
+                        "https://s2.loli.net/2023/10/31/qEl6x8VyJGmKRBY.png",
+                        null,
+                        1
+                    )
+                )
+                list.add(
+                    DataBean(
+                        "https://s2.loli.net/2023/10/31/LjgsoWfyA4rnOmd.png",
+                        null,
+                        1
+                    )
+                )
+                list.add(
+                    DataBean(
+                        "https://s2.loli.net/2023/10/31/NEG4LFRwAthMJfv.png",
+                        null,
+                        1
+                    )
+                )
+                //
+                list.add(
+                    DataBean(
                         "https://s2.loli.net/2023/10/26/osI8hvPt5kBgNFA.png",
                         null,
                         1

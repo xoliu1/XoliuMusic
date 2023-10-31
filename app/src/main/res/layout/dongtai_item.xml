@@ -42,7 +42,7 @@
             android:layout_height="27dp"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="15sp"
+            android:textSize="13sp"
             android:layout_marginLeft="10dp"
             android:text="qweqw"
             android:textColor="@color/gray"
@@ -62,6 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="qwewqasdddddddddddddddddddddddasdddddddddewq"
+            android:lineSpacingMultiplier="1.25"
             android:textSize="15sp"/>
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"

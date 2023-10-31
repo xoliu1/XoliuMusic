@@ -19,11 +19,11 @@
         app:tabMode="fixed"
         android:background="@drawable/shape_tab_bg"
         app:tabIndicator="@drawable/shape_full_tab_indicator"
-        app:tabIndicatorColor="@color/colorWhite"
+        app:tabIndicatorColor="@color/red"
         app:tabIndicatorFullWidth="true"
         app:tabIndicatorHeight="37dp"
         app:tabMinWidth="96dp"
-        app:tabSelectedTextColor="@color/colorDeep"
+        app:tabSelectedTextColor="@color/aliceblue"
         app:tabTextColor="@color/black"
         >
 

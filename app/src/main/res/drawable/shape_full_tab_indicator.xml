@@ -5,7 +5,7 @@
             <!-- 上下边距合计1dp 高度减少1dp -->
             <size android:height="45dp" />
             <corners android:radius="999dp" />
-            <solid android:color="@color/colorWhite" />
+            <solid android:color="@color/blanchedalmond" />
         </shape>
     </item>
 </layer-list>

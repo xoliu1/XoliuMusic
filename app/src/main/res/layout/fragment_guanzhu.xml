@@ -6,13 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".ui.Main.Fragment.guanzhuFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <com.youth.banner.Banner
-        android:id="@+id/banner"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewYueMiTuan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
