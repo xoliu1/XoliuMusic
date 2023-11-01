@@ -4,10 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#D5D2D2"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
@@ -23,6 +20,7 @@
             android:id="@+id/touXiang"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:src="@drawable/user_ic5"
 
             android:adjustViewBounds="true"/>
         </androidx.cardview.widget.CardView>
@@ -32,7 +30,7 @@
             android:layout_height="30dp"
             android:textColor="@color/black"
             android:layout_marginLeft="10dp"
-            android:text="awiuhduiwahd"
+            android:text="EdSheeran"
             android:textSize="17sp"
             android:gravity="center"
             android:layout_gravity="center"/>
@@ -44,7 +42,7 @@
             android:gravity="center"
             android:textSize="13sp"
             android:layout_marginLeft="10dp"
-            android:text="qweqw"
+            android:text="昨天 19:33"
             android:textColor="@color/gray"
             />
     </LinearLayout>
@@ -61,7 +59,7 @@
             android:id="@+id/contentString"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="qwewqasdddddddddddddddddddddddasdddddddddewq"
+            android:text="Happy Halloween from Vegas Mark Surridge.\n"
             android:lineSpacingMultiplier="1.25"
             android:textSize="15sp"/>
         <androidx.cardview.widget.CardView
@@ -80,6 +78,7 @@
                 android:id="@+id/songPic"
                 android:layout_width="43dp"
                 android:layout_height="43dp"
+                android:src="@drawable/zhuanji_ic7"
                 />
             </androidx.cardview.widget.CardView>
             <TextView
@@ -87,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="8dp"
-                android:text="Lost in"
+                android:text="÷ (Deluxe)"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"/>
@@ -98,7 +97,7 @@
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="27dp"
                 android:textSize="13sp"
-                android:text="ALI/"/>
+                android:text="EdSheeran"/>
 
 
         </androidx.cardview.widget.CardView>
@@ -117,9 +116,10 @@
                 android:src="@drawable/share"
                 android:adjustViewBounds="true"/>
             <TextView
+                android:id="@+id/fenxiangNum"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text=" 分享"
+                android:text=" 7"
                 android:gravity="center"
                 android:textSize="14sp"/>
             <ImageView
@@ -127,12 +127,12 @@
                 android:layout_height="20dp"
                 android:src="@drawable/pingklun"
                 android:adjustViewBounds="true"
-                android:layout_marginLeft="70dp"/>
+                android:layout_marginLeft="90dp"/>
             <TextView
                 android:id="@+id/pinglunNum"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
-                android:text="123"
+                android:text="52"
                 android:gravity="center"
                 android:textSize="14sp"/>
             <ImageView
@@ -140,12 +140,12 @@
                 android:layout_height="20dp"
                 android:src="@drawable/dianzan3"
                 android:adjustViewBounds="true"
-                android:layout_marginLeft="70dp"/>
+                android:layout_marginLeft="90dp"/>
             <TextView
                 android:id="@+id/dianzanNum"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:text="123"
+                android:text="239"
                 android:gravity="center"
                 android:textSize="14sp"/>
 
@@ -157,12 +157,11 @@
 
 
 
-
-
-
-
-
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D5D2D2"/>
 
 
 

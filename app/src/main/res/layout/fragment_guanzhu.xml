@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".ui.Main.Fragment.guanzhuFragment">
+    tools:context=".ui.Main.Fragment.guanzhuFragment"
+    android:background="@drawable/jianbian0">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,6 +17,7 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/linearLayout2">
+        <include layout="@layout/yuemituan_item"/>
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerViewYueMiTuan"
             android:layout_width="match_parent"
@@ -27,8 +29,8 @@
             android:id="@+id/linearLayout2"
             android:layout_width="match_parent"
 
-            android:layout_height="0.5dp"
-            android:background="@color/gray"
+            android:layout_height="0.1dp"
+            android:background="#D5D2D2"
             android:orientation="vertical"
             app:layout_constraintBottom_toTopOf="@id/linearLayout3"
             app:layout_constraintTop_toBottomOf="@id/linearLayout1"
@@ -55,7 +57,7 @@
             <com.google.android.material.tabs.TabLayout
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:layout_marginLeft="170dp"
+                android:layout_marginLeft="190dp"
                 app:tabIndicatorHeight="0dp">
 
                 <com.google.android.material.tabs.TabItem android:text="全部" />
@@ -73,13 +75,483 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView1"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             app:layout_constraintTop_toBottomOf="@id/linearLayout3"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_margin="10dp">
+            app:layout_constraintBottom_toBottomOf="@id/linearLayout4"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="@color/gray">
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="10dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="100dp"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    app:cardElevation="10dp">
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/user_ic5"
+                        />
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="100dp"
+                    android:layout_gravity="center|right">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/user_ic4" />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="95dp"
+                android:text="EdSheeran等18位歌手发布了新作品       "
+                />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/next_white"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="10dp"/>
 
 
         </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#EdSheeran"
+            android:textColor="#539EB5"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@id/linearLayout4"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/linearLayout4"
+            android:layout_marginRight="260dp"
+            android:layout_marginBottom="40dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/horizontalScrollView1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardView1">
+
+            <include layout="@layout/dongtai_item" />
+
+
+        </LinearLayout>
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout4"
+            app:layout_constraintBottom_toTopOf="@id/linearLayout5"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="除你以外 别无所爱"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="大学生为几个学分快出道了"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="万圣节"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="用一首歌开启十一月"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="今日初雪"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="张杰音乐版权回村"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="在听一遍须尽欢"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="i人的暗恋日记"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="我这一生如履薄冰"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="古风抒情歌曲好上头"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="如果明天是世界末日"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="我要逆风去翱翔"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="考研之路 坚持到底"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="适合一个人静下来听的歌"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/jinghao"
+                                android:adjustViewBounds="true"
+                                android:layout_margin="5dp"
+                                android:layout_gravity="left|center"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_gravity="left|center"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:gravity="center|left"
+                                android:text="我的青春回来了！"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/horizontalScrollView1"
+            android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDongTai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

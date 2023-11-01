@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.Main.Fragment.sheqvFragment">
+    tools:context=".ui.Main.Fragment.sheqvFragment"
+    android:background="@drawable/jianbian0">
 
     <!-- TODO: Update blank fragment layout -->
     <com.google.android.material.tabs.TabLayout

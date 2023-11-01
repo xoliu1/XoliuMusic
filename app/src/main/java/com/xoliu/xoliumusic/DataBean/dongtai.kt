@@ -13,6 +13,7 @@ class dongtai {
     var random = Random()
     var pinglunNum:String = (random.nextInt(901) + 107).toString()
     var dianzanNum:String = (random.nextInt(9003) + 1006).toString()
+    var fenxiangNum:String = "分享"
 
     constructor(
         userImg: Int,
@@ -30,5 +31,24 @@ class dongtai {
         this.songPic = songPic
         this.songName = songName
         this.songSinger = songSinger
+    }
+    constructor(
+        userImg: Int,
+        userName: String,
+        userAction: String,
+        content: String,
+        songPic: Int,
+        songName: String,
+        songSinger: String,
+        fenxiangNum:String
+    ) {
+        this.userImg = userImg
+        this.userName = userName
+        this.userAction = userAction
+        this.content = content
+        this.songPic = songPic
+        this.songName = songName
+        this.songSinger = songSinger
+        this.fenxiangNum = (random.nextInt(90) + 17).toString()
     }
 }

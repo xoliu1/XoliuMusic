@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.Main.Fragment.MineFragment"
-    android:background="@drawable/jianbian0"
+    android:background="@drawable/jianbian"
     android:scrollbars="none"
     >
 

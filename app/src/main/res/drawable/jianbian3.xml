@@ -5,9 +5,9 @@
     <solid android:color="@color/colorAccent" />
     <gradient
         android:type="linear"
-        android:startColor="#93a5cf"
 
-        android:endColor="#e4efe9"
+        android:startColor="#f1ebdd"
+        android:endColor="#daccd8"
         android:centerX="0.5"
         android:centerY="0.5"
 

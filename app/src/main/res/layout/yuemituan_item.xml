@@ -15,6 +15,7 @@
         android:foreground="?android:selectableItemBackground">
         <ImageView
             android:id="@+id/yuemituanIMG"
+            android:src="@drawable/gfr"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
@@ -31,6 +32,6 @@
         android:textSize="12sp"
         android:lines="1"
         android:gravity="center"
-        android:text="asdsadsadasd"/>
+        android:text="乐迷团"/>
 
 </LinearLayout>

@@ -21,6 +21,7 @@ class dongtaiAdapter(val list: List<dongtai>):RecyclerView.Adapter<dongtaiAdapte
         var songSinger: TextView = itemView.findViewById(R.id.songSinger)
         var pinglun: TextView = itemView.findViewById(R.id.pinglunNum)
         var dianzan: TextView = itemView.findViewById(R.id.dianzanNum)
+        var fenxiang:TextView = itemView.findViewById(R.id.fenxiangNum)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -34,6 +35,7 @@ class dongtaiAdapter(val list: List<dongtai>):RecyclerView.Adapter<dongtaiAdapte
         holder.songSinger.setText(dongtai.songSinger)
         holder.dianzan.setText(dongtai.dianzanNum)
         holder.pinglun.setText(dongtai.pinglunNum)
+        holder.fenxiang.setText(dongtai.fenxiangNum)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
