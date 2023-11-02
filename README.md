@@ -4,6 +4,8 @@
 
 # Demo-version 0.7 
 
+> 用的是录屏转gif，加载动图出来会有些慢，请耐心等待:coffee:
+
 ## 引导页SplashActivity
 
 代码学习了github上的wobiancao的demo：[Music163GuideDemo](https://github.com/wobiancao/Music163GuideDemo) ，(项目里唯一的java部分,因为kotlin没那么熟练)，我觉得很好看！:heart:
