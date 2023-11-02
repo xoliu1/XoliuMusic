@@ -142,7 +142,7 @@ public class SplashActivity extends AppCompatActivity {
 
        // Toast.makeText(this, "登录/注册", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, LoginActivity.class));
-        finish();
+        //finish();
     }
 
     /**

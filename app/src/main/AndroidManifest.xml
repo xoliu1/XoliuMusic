@@ -26,10 +26,10 @@
             android:name=".ui.Splash.LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.Splash.SplashActivity"
+            android:name=".ui.Main.MainActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.Main.MainActivity"
+            android:name=".ui.Splash.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

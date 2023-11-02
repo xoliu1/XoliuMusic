@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.Splash.SplashActivity"
-    android:background="@drawable/jianbian"
+    android:background="@drawable/jianbian3"
     >
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="98dp"
+        android:layout_width="93dp"
         android:layout_height="93dp"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/wangyiyunyinle"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/wyic"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -22,10 +22,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
-        android:layout_marginTop="130dp"
+        android:layout_marginTop="170dp"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="370dp"
         android:layout_centerHorizontal="true"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,22 +86,23 @@
             android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="50dp"
             android:gravity="center"
             android:textSize="12sp"
             android:text="@string/xieyi" />
 
-        <com.google.android.material.button.MaterialButton
+
+        <Button
             android:id="@+id/btn_login"
             android:layout_width="120dp"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#DC143C"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_button"
             android:text="@string/materialButtonText"
             android:textSize="15sp"
             app:cornerRadius="10dp"
-            app:rippleColor="#171616" />
+            android:textColor="@color/red" />
 
 
     </LinearLayout>

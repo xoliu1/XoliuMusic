@@ -1,3 +1,70 @@
+23/11/3，停止demo，进行笔记整理.....
+
+毕竟只是个demo不想写这么久，下边会有展示↓↓↓
+
+# Demo-version 0.7 
+
+## 引导页SplashActivity
+
+代码学习了github上的wobiancao的demo：[Music163GuideDemo](https://github.com/wobiancao/Music163GuideDemo) ，(项目里唯一的java部分,因为kotlin没那么熟练)，我觉得很好看！:heart:
+
+效果：
+
+![Splash.gif](https://s2.loli.net/2023/11/03/mudPFAqS58fGk9e.gif)
+
+
+
+## 登录页LoginActivity
+
+用了`TextInputLayout`和`TextInputEditText`  有hint自动上移的动效和多种输入限制，中间输密码黑屏，是因为小米录屏检测到了密码，自动黑屏保护
+
+下边文字是可以点的:blush:
+
+![login.gif](https://s2.loli.net/2023/11/03/wM8JDkZVc2QfNxj.gif)
+
+## 主界面
+
+光写了个主体壳子，主要内容是那些fragment
+
+- 用到`BottomNavigationView`配置menu项生成底部导航栏
+- `FragmentContainerView`配置 `app:navGraph` 属性，绑定各个导航项对应碎片。(Fragment也行，方式不一样)
+
+
+
+## 发现页
+
+简单的页面仿写，用到`SearchView` `CardView`等
+
+- 多个里边多个`cardView`打的`ScrollView`
+
+- 第三方库 `Xbanner`实现首页导航图的图片海报轮播，Glide加载对应url
+
+  ![explore.gif](https://s2.loli.net/2023/11/03/E9nbTczhaIQDlFC.gif)
+
+## 我的页
+
+大体界面仿写，以及`TabLayout` 的使用
+
+- `tabItem`事件绑定：`scrollview`滑动到对应指定内容
+- 滑动悬浮栏,下滑超过tablayout时，显示歌单栏，上滑出去不会显示。
+- 听歌状态的文字跑马灯效果(死数据，不会根据当前歌名改变而改变TextView的内容)
+
+![mine.gif](https://s2.loli.net/2023/11/03/PosthHKYMlIRn4E.gif)
+
+## 关注页
+
+就这
+
+![guanzhu.gif](https://s2.loli.net/2023/11/03/ypqxjSRCEcU5Hhn.gif)
+
+## 社区页
+
+就这
+
+![sheqv.gif](https://s2.loli.net/2023/11/03/8qK5lWwuvJIS6fA.gif)
+
+
+
 # Demo构思（不断修改）
 
 ## 逻辑层
@@ -53,7 +120,7 @@
 - [x] Tablayout的使用
 - [x] tabItem事件绑定：scrollview滑动到对应指定内容
 - [x] 听歌状态的文字跑马灯效果(死数据，不会根据当前歌名改变)
-- [ ] 滑动悬浮栏,下滑时，上层显示用户头像与id信息
+- [x] 滑动悬浮栏,下滑时，显示歌单栏
 
 ### '关注'页
 
@@ -75,11 +142,12 @@
 
 
 
-
+> 大抵应该是不会再更新:neutral_face:
+>
 
 # 其他
 
-参考的官方网易云音乐布局边界：
+我参考的官方网易云音乐布局边界：
 
 <img src="https://s2.loli.net/2023/10/22/41SiVRDo7z38uJ9.jpg" alt="0160b808508dea9f22c7e65c5b7e325" style="zoom:20%;" />
 
