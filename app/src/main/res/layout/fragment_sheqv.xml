@@ -41,7 +41,7 @@
                 app:tabIndicator="@drawable/shape_full_tab_indicator"
                 app:tabIndicatorColor="@color/red"
                 app:tabIndicatorFullWidth="true"
-                app:tabIndicatorHeight="37dp"
+                app:tabIndicatorHeight="30dp"
                 app:tabMinWidth="96dp"
                 app:tabSelectedTextColor="@color/aliceblue"
                 app:tabTextColor="@color/black"

@@ -168,9 +168,9 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
             override fun onTabReselected(tab: Tab) {}
         })
         //抽屉
-        var btn_openDrawer:ImageButton = view.findViewById(R.id.openDrawer)
-        val drawerLayout: DrawerLayout = view.findViewById(R.id.drawerLayout)
-        btn_openDrawer.setOnClickListener { drawerLayout.openDrawer(GravityCompat.START) }
+//        var btn_openDrawer:ImageButton = view.findViewById(R.id.openDrawer)
+//        val drawerLayout: DrawerLayout = view.findViewById(R.id.drawerLayout)
+//        btn_openDrawer.setOnClickListener { drawerLayout.openDrawer(GravityCompat.START) }
 
     }
 

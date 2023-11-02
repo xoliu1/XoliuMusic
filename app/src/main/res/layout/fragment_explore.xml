@@ -182,7 +182,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cardView"
-        android:layout_marginTop="25dp">
+        android:layout_marginTop="15dp">
 
         <com.youth.banner.Banner
             android:id="@+id/banner"
