@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.Main.Fragment.MineFragment">
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
 
 
 
@@ -48,7 +55,8 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:background="@color/colorWhite1"
-                android:src="@drawable/cehua1" />
+                android:src="@drawable/cehua1"
+                android:clickable="true"/>
 
             <ImageButton
                 android:layout_width="35dp"
@@ -389,3 +397,13 @@
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+         />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

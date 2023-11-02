@@ -4,17 +4,22 @@ package com.xoliu.xoliumusic.ui.Main.Fragment
 
 
 
+
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewTreeObserver.OnScrollChangedListener
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
+import androidx.core.view.GravityCompat
 import androidx.core.widget.NestedScrollView
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -70,28 +75,28 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
         val toolbar = v.findViewById<Toolbar>(R.id.toolbar)
 
     }
+    lateinit var scrollListener:OnScrollChangedListener
 
-    var boolean = true
     fun initTabLayout(v:View){
-        if (boolean){
+
             val floatingView = v.findViewById<LinearLayout>(R.id.appBar)
             //var tabLayout = v.findViewById<TabLayout>(R.id.tablayout1)
             val nestedScrollView = v.findViewById<NestedScrollView>(R.id.scrollView)
-            nestedScrollView.viewTreeObserver.addOnScrollChangedListener {
+            scrollListener = OnScrollChangedListener {
                 val scrollY = nestedScrollView.scrollY
                 val top: Int = floatingView.getTop()
                 if (scrollY > top) {
                     // 当滚动距离超过部件的顶部位置时，将部件固定在顶部
                     floatingView.setY(scrollY.toFloat())
-                    floatingView.setBackgroundColor(getResources().getColor(R.color.colorWhite))
+                    floatingView.setBackgroundColor(Color.WHITE)
                 } else {
                     // 否则，恢复部件的原始位置
                     floatingView.setY(top.toFloat())
-                    floatingView.setBackgroundColor(getResources().getColor(R.color.colorWhite1))
+                    floatingView.setBackgroundColor(Color.parseColor("#00ffffff"))
                 }
             }
-            boolean =false
-        }
+            nestedScrollView.viewTreeObserver.addOnScrollChangedListener(scrollListener)
+
 
     }
 
@@ -140,7 +145,7 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
         recyclerViewGeDan2.adapter = gedanAdapter(geDanList2)
     }
     fun  initClick(view: View){
-
+        //tablayout
         var nestedScrollView = view.findViewById<NestedScrollView>(R.id.scrollView)
         var tablayout1 = view.findViewById<TabLayout>(R.id.tablayout1)
         var cardView3 = view.findViewById<CardView>(R.id.cardView3)
@@ -162,7 +167,17 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
             override fun onTabUnselected(tab: Tab) {}
             override fun onTabReselected(tab: Tab) {}
         })
+        //抽屉
+        var btn_openDrawer:ImageButton = view.findViewById(R.id.openDrawer)
+        val drawerLayout: DrawerLayout = view.findViewById(R.id.drawerLayout)
+        btn_openDrawer.setOnClickListener { drawerLayout.openDrawer(GravityCompat.START) }
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        val nestedScrollView = requireView().findViewById<NestedScrollView>(R.id.scrollView)
+        nestedScrollView.getViewTreeObserver().removeOnScrollChangedListener(scrollListener);
     }
 
 //            binding.scrollView.post(Runnable {
