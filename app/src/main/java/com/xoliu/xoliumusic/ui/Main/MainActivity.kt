@@ -23,8 +23,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        //初始化toolbar
-        initToolbar(binding.toolbar)
+
 
         //初始化导航栏
         initBTMNV()
@@ -33,30 +32,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     }
 
-    /**
-     * 配置首页的toolbar，用到searchView
-     * @author xoliu
-     * @create 23-10-23
-     **/
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_search, menu)
-        //定义出searchView实体
-
-
-
-
-
-
-
-
-
-
-
-
-
-        return true
-    }
 
     fun initBTMNV(){
         val navView = findViewById<BottomNavigationView>(com.xoliu.xoliumusic.R.id.btmnv)

@@ -2,13 +2,19 @@ package com.xoliu.xoliumusic.ui.Main.Fragment
 
 
 
+
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewTreeObserver.OnScrollChangedListener
+import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
+import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
+import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -47,11 +53,45 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        initToolbar(view)
+        initTabLayout(view)
         initData()
         initRecyclerView(view)
         initClick(view)
         val tv: TextView = view.findViewById(R.id.textView2)
         tv.requestFocus()
+
+
+    }
+
+    private fun initToolbar(v: View) {
+        //未完成
+        val nestedScrollView = v.findViewById<NestedScrollView>(R.id.scrollView)
+        val toolbar = v.findViewById<Toolbar>(R.id.toolbar)
+
+    }
+
+    var boolean = true
+    fun initTabLayout(v:View){
+        if (boolean){
+            val floatingView = v.findViewById<LinearLayout>(R.id.appBar)
+            //var tabLayout = v.findViewById<TabLayout>(R.id.tablayout1)
+            val nestedScrollView = v.findViewById<NestedScrollView>(R.id.scrollView)
+            nestedScrollView.viewTreeObserver.addOnScrollChangedListener {
+                val scrollY = nestedScrollView.scrollY
+                val top: Int = floatingView.getTop()
+                if (scrollY > top) {
+                    // 当滚动距离超过部件的顶部位置时，将部件固定在顶部
+                    floatingView.setY(scrollY.toFloat())
+                    floatingView.setBackgroundColor(getResources().getColor(R.color.colorWhite))
+                } else {
+                    // 否则，恢复部件的原始位置
+                    floatingView.setY(top.toFloat())
+                    floatingView.setBackgroundColor(getResources().getColor(R.color.colorWhite1))
+                }
+            }
+            boolean =false
+        }
 
     }
 
@@ -101,7 +141,7 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
     }
     fun  initClick(view: View){
 
-        var scrollView = view.findViewById<ScrollView>(R.id.scrollView)
+        var nestedScrollView = view.findViewById<NestedScrollView>(R.id.scrollView)
         var tablayout1 = view.findViewById<TabLayout>(R.id.tablayout1)
         var cardView3 = view.findViewById<CardView>(R.id.cardView3)
         var cardView2 = view.findViewById<CardView>(R.id.cardView2)
@@ -111,11 +151,11 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
                 //  tab.getPosition()  返回数字，从0开始
                 // tab.getText()  返回字符串类型，从0开始
                 if (tab.position == 0) {
-                        scrollView.smoothScrollTo(0, cardView2.top);
+                        nestedScrollView.smoothScrollTo(0, cardView2.top);
                 }else if (tab.position == 1){
-                    scrollView.smoothScrollTo(0, cardView3.top);
+                    nestedScrollView.smoothScrollTo(0, cardView3.top);
                 }else{
-                    scrollView.fullScroll(ScrollView.FOCUS_DOWN);
+                    nestedScrollView.fullScroll(ScrollView.FOCUS_DOWN);
                 }
             }
 
@@ -132,4 +172,5 @@ class MineFragment : BaseFragment<FragmentMineBinding>() {
 //                binding.scrollView.smoothScrollTo(0, binding.cardView3.getMeasuredHeight());
 //            });
 //            binding.scrollView.fullScroll(ScrollView.FOCUS_DOWN);
+    
 }

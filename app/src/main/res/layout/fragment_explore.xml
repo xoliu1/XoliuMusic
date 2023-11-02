@@ -8,11 +8,66 @@
     android:scrollbars="none"
     tools:context=".ui.Main.Fragment.ExploreFragment">
 <androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_marginTop="-40dp"
-    android:layout_width="match_parent"
-    android:layout_height="2500dp"
 
+    android:layout_width="match_parent"
+    android:layout_height="2000dp"
     >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/jianbian"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:menu="@menu/menu_search"
+        app:navigationIcon="@drawable/djtemp"
+        tools:layout_editor_absoluteX="16dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            app:cardCornerRadius="30dp"
+            android:alpha="0.7"
+            >
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView1"
+                android:layout_gravity="left|center"
+
+                android:layout_marginLeft="-5dp"
+                app:queryHint="薛之谦"
+                android:imeOptions="actionSearch"
+                app:searchIcon="@drawable/search"
+                android:layout_width="240dp"
+                android:inputType="text|textCapWords"
+                android:layout_height="30dp"
+                />
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/scanma"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="15dp"
+                android:background="@color/colorWhite1"/>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <!--<ImageView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:alpha="0.4"
+            android:src="@drawable/esdmuqwu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+
+    </androidx.appcompat.widget.Toolbar>
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -20,12 +75,12 @@
         android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-45dp"
-        app:layout_constraintBottom_toBottomOf="@id/cardView"
+        app:layout_constraintBottom_toTopOf="@id/cardView"
         app:layout_constraintEnd_toEndOf="@id/cardView"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-40dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         app:layout_constraintVertical_bias="0.108"
         android:scrollbars="none">
 

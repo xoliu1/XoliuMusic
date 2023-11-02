@@ -24,9 +24,9 @@
         android:name="com.xoliu.xoliumusic.ui.Main.Fragment.sheqvFragment"
         android:label="label"
         tools:layout="@layout/fragment_sheqv" />
-    <fragment
+<!--    <fragment
         android:id="@+id/navigation_item5"
         android:name="com.xoliu.xoliumusic.ui.Main.Fragment.bokeFragment"
         android:label="label"
-        tools:layout="@layout/fragment_boke" />
+        tools:layout="@layout/fragment_boke" />-->
 </navigation>

@@ -21,9 +21,9 @@
         android:icon="@drawable/sheqv"
         android:title="@string/btnv_item4"
         app:showAsAction="always"/>
-    <item
+<!--    <item
         android:id="@+id/navigation_item5"
         android:icon="@drawable/boke"
         android:title="@string/btnv_item5"
-        app:showAsAction="always"/>
+        app:showAsAction="always"/>-->
 </menu>

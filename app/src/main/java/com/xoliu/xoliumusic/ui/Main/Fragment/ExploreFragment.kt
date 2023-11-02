@@ -2,8 +2,10 @@ package com.xoliu.xoliumusic.ui.Main.Fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
@@ -12,7 +14,9 @@ import com.bumptech.glide.request.RequestOptions
 import com.xoliu.xoliumusic.Base.BaseFragment
 import com.xoliu.xoliumusic.DataBean.DataBean
 import com.xoliu.xoliumusic.R
+import com.xoliu.xoliumusic.databinding.ActivityMainBinding
 import com.xoliu.xoliumusic.databinding.FragmentExploreBinding
+import com.xoliu.xoliumusic.ui.Unfinished.shiqv
 import com.youth.banner.Banner
 import com.youth.banner.adapter.BannerImageAdapter
 import com.youth.banner.holder.BannerImageHolder
@@ -38,7 +42,9 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
         super.onCreate(savedInstanceState)
 
 
+
     }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -60,49 +66,24 @@ class ExploreFragment : BaseFragment<FragmentExploreBinding>() {
             }
     }
 
-    var num1 = 0;
-    var num2 = 0;
-    var num3 = 0;
-    var num4 = 0;
-//    fun initdianji(){
+//    fun initToolbar(toolbar: Toolbar){
+//        toolbar.setNavigationOnClickListener {
+//            binding.drawerLayout.open()
+//        }
 //
-//        binding.btnDianzan1.setOnClickListener {
-//            if (num1 % 2 == 0) {
+//        toolbar.setOnMenuItemClickListener { menuItem ->
 //
-//            }else{
-//                it.setBackgroundResource(R.drawable.dianzan)
+//            when (menuItem.itemId) {
+//                com.xoliu.xoliumusic.R.id.shiqv -> jumpActivity(shiqv::class.java)
 //            }
-//            ++num1;
-//            true
-//        }
-//        binding.btnDianzan2.setOnClickListener {
-//            if (num2 % 2 == 0) {
-//                it.setBackgroundResource(R.drawable.dianzan1)
-//            }else{
-//                it.setBackgroundResource(R.drawable.dianzan)
-//            }
-//            ++num2;
-//            true
-//        }
-//        binding.btnDianzan1.setOnClickListener {
-//            if (num3 % 2 == 0) {
-//                it.setBackgroundResource(R.drawable.dianzan1)
-//            }else{
-//                it.setBackgroundResource(R.drawable.dianzan)
-//            }
-//            ++num3;
-//            true
-//        }
-//        binding.btnDianzan1.setOnClickListener {
-//            if (num4 % 2 == 0) {
-//                it.setBackgroundResource(R.drawable.dianzan1)
-//            }else{
-//                it.setBackgroundResource(R.drawable.dianzan)
-//            }
-//            ++num4;
+//
 //            true
 //        }
 //    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+    }
 
 
 
