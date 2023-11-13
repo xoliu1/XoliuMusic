@@ -63,6 +63,10 @@
 
 就这
 
+![WeChat_2023111314203 -original-original](C:\Users\爸爸\Desktop\WeChat_2023111314203 -original-original.gif)
+
+
+
 ![sheqv.gif](https://s2.loli.net/2023/11/03/8qK5lWwuvJIS6fA.gif)
 
 
@@ -126,13 +130,13 @@
 
 ### '关注'页
 
-- [x] 多个RecyclerView
+- [x] 多个RecyclerView(增加滑入动画 )
 - [ ] 滑动刷新
 
 ### '社区'页
 
 - [x] Tablayout的使用
-- [x] 乐迷团横向RecyclerView
+- [x] 乐迷团横向RecyclerView(增加滑入动画 )
 - [x] 广场的动态页面
 
 ### '播客'页（已弃用）

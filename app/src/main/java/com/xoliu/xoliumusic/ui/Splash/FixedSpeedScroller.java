@@ -24,7 +24,7 @@ public class FixedSpeedScroller extends Scroller {
 
     @Override
     public void startScroll(int startX, int startY, int dx, int dy) {
-        // Ignore received duration, use fixed one instead
+        // 固定动画速度时间
         super.startScroll(startX, startY, dx, dy, mDuration);
     }
 

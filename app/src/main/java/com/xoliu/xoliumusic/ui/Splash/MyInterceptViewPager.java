@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import androidx.viewpager.widget.ViewPager;
 
 public class MyInterceptViewPager extends ViewPager {
-    private boolean isScrollable = true;
+    private boolean isScrollable = true;//拦截点击事件
 
     public MyInterceptViewPager(Context context) {
         super(context);

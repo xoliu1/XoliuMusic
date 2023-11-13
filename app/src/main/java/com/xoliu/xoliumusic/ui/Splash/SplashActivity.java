@@ -47,6 +47,7 @@ public class SplashActivity extends AppCompatActivity {
         mIndicatorOne = findViewById(R.id.main_indicator_one);
         mIndicatorTwo = findViewById(R.id.main_indicator_two);
         mIndicatorThree = findViewById(R.id.main_indicator_three);
+        //修改文字ViewPager的动画速度
         try {
             Field field = ViewPager.class.getDeclaredField("mScroller");//反射
             field.setAccessible(true);
@@ -66,6 +67,13 @@ public class SplashActivity extends AppCompatActivity {
 
             }
 
+            /***
+             * 设置底部三个原点的状态
+             * @param i
+             * @return void
+             * @author xoliu
+             * @create 23-11-8
+             **/
             @Override
             public void onPageSelected(int i) {
                 pageIndex = i;
@@ -140,7 +148,6 @@ public class SplashActivity extends AppCompatActivity {
 
     public void onLogin(View view) {
 
-       // Toast.makeText(this, "登录/注册", Toast.LENGTH_SHORT).show();
         startActivity(new Intent(this, LoginActivity.class));
         //finish();
     }
