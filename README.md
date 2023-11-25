@@ -61,11 +61,9 @@
 
 ## 社区页
 
-就这
+进入效果：
 
-
-
-
+![WeChat_2023112513l.gif](https://s2.loli.net/2023/11/25/6O7GY4A5c8lZnUv.gif)
 
 ![sheqv.gif](https://s2.loli.net/2023/11/03/8qK5lWwuvJIS6fA.gif)
 
@@ -148,8 +146,7 @@
 
 
 
-> 大抵应该是不会再更新:neutral_face:
->
+:neutral_face:
 
 # 其他
 
